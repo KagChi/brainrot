@@ -35,6 +35,8 @@ export async function getBrainlyMeta(url: string | null): Promise<BrainlyResult 
             const text = await response.text();
             const $ = load(text);
 
+            console.log(text);
+
             return { answer: $(".js-answer-content").text(), question: $(".QuestionBoxContent-module__primary--F++oO").text() };
         }
     }
