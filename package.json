@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "@kagchi/brainrot",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,15 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.12",
+    "lucide-react": "^0.399.0",
     "next": "14.2.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@hazmi35/eslint-config": "^12.0.0",
@@ -26,7 +32,7 @@
     "eslint-plugin-tailwindcss": "^3.17.4",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.2"
+    "typescript": "^5.4.5"
   },
   "eslintConfig": {
     "parserOptions": {
