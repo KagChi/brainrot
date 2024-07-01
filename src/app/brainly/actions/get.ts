@@ -6,6 +6,7 @@ import { load } from "cheerio";
 export interface BrainlyResult {
     answer: string;
     question: string;
+    raw: string;
 }
 
 export async function getBrainlyMeta(url: string | null): Promise<BrainlyResult | null> {
