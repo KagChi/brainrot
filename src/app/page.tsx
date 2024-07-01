@@ -3,6 +3,7 @@ import WordPullUp from "@/components/magicui/word-pull-up";
 import Image from "next/image";
 import WavyText from "../components/magicui/wavy-text";
 import { Card } from "@/components/fleet/card";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -23,19 +24,23 @@ export default function Home() {
                 <WavyText className="text-3xl" word="Available Platforms" />
 
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                    <Card
-                        name="RoboGuru"
-                        description="Bantu Kamu Jawab Soal dengan Tepat, Cepat, dan Gratis!
-                            Ayo, dapatkan jawaban yang terverifikasi Master Teacher untuk soalmu!"
-                        image="/assets/images/Roboguru.jpg"
-                    />
+                    <Link href={"/roboguru"}>
+                        <Card
+                            name="RoboGuru"
+                            description="Bantu Kamu Jawab Soal dengan Tepat, Cepat, dan Gratis!
+                                Ayo, dapatkan jawaban yang terverifikasi Master Teacher untuk soalmu!"
+                            image="/assets/images/Roboguru.jpg"
+                        />
+                    </Link>
 
-                    <Card
-                        name="Brainly"
-                        description="Brainly adalah tempat berbagi ilmu ratusan juta siswa dan pakar edukasi,
-                            belajar bersama untuk menyelesaikan soal-soal yang paling rumit sekalipun"
-                        image="/assets/images/Brainly.jpeg"
-                    />
+                    <Link href={"/brainly"}>
+                        <Card
+                            name="Brainly"
+                            description="Brainly adalah tempat berbagi ilmu ratusan juta siswa dan pakar edukasi,
+                                belajar bersama untuk menyelesaikan soal-soal yang paling rumit sekalipun"
+                            image="/assets/images/Brainly.jpeg"
+                        />
+                    </Link>
                 </div>
             </div>
         </main>
