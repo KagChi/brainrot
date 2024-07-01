@@ -24,17 +24,17 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <Card
-                        name="Brainly"
-                        description="Brainly adalah tempat berbagi ilmu ratusan juta siswa dan pakar edukasi,
-                            belajar bersama untuk menyelesaikan soal-soal yang paling rumit sekalipun"
-                        image="/assets/images/Brainly.jpeg"
-                    />
-
-                    <Card
                         name="RoboGuru"
                         description="Bantu Kamu Jawab Soal dengan Tepat, Cepat, dan Gratis!
                             Ayo, dapatkan jawaban yang terverifikasi Master Teacher untuk soalmu!"
                         image="/assets/images/Roboguru.jpg"
+                    />
+
+                    <Card
+                        name="Brainly"
+                        description="Brainly adalah tempat berbagi ilmu ratusan juta siswa dan pakar edukasi,
+                            belajar bersama untuk menyelesaikan soal-soal yang paling rumit sekalipun"
+                        image="/assets/images/Brainly.jpeg"
                     />
                 </div>
             </div>
